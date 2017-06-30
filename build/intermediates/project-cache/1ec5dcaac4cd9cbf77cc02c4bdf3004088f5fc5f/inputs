@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=E:\StudioProject\MusicPlayer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar
+FILE_HASH=5fc581baffaa40eb134c9d9a6bea2d41157394da
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true

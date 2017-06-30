@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=E:\StudioProject\MusicPlayer\app\build\intermediates\transforms\desugar\debug\1.jar
+FILE_HASH=a086ec3f1e80e984968692e40e03c8377e4ef5ea
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true

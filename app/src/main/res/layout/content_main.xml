@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#5CACEE"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="音乐列表"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv"
+        android:divider="@color/text_white">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/iv_art_bottom"
+            android:layout_width="58.0dip"
+            android:layout_height="58.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            android:src="@drawable/default_artist" />
+
+        <ImageButton
+            android:id="@+id/btn_play_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_next_local"
+            android:layout_toLeftOf="@+id/btn_next_local"
+            android:background="@drawable/pressed_to"
+            android:padding="4dp"
+            android:src="@drawable/notification_pause" />
+
+        <ImageButton
+            android:id="@+id/btn_next_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_praised"
+            android:background="@drawable/pressed_to"
+            android:padding="2dp"
+            android:src="@drawable/notification_next" />
+
+        <ImageButton
+            android:id="@+id/btn_pre_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_play_local"
+            android:background="@drawable/pressed_to"
+            android:padding="4dp"
+            android:src="@drawable/notification_pre" />
+
+        <ImageButton
+            android:id="@+id/btn_praised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pressed_to"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/desk2_btn_love_prs" />
+
+        <sam.musicplayer.Views.RobotoLightTextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toLeftOf="@+id/btn_pre_local"
+            android:layout_toRightOf="@+id/iv_art_bottom"
+            android:singleLine="true"
+            android:text="Music Lite"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

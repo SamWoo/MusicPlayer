@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="GalleryPick-1.1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GalleryPick-1.1.4.aar/ccf8a3ce8625af71d83d18d20d65040c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GalleryPick-1.1.4.aar/ccf8a3ce8625af71d83d18d20d65040c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.YancyYe/GalleryPick/1.1.4/e2c3dcb63c151287a792aa6344ca14e205d03584/GalleryPick-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/image_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/listImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/default_artist" />
+    </LinearLayout>
+
+    <!-- 歌曲名 -->
+    <TextView
+        android:id="@+id/listName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="@color/text_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:singleLine="true"/>
+
+    <!-- 歌手名-->
+    <TextView
+        android:id="@+id/listSinger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listName"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and..."
+        android:textColor="@color/text_white"
+        android:textSize="12sp" />
+
+    <!-- 歌曲播放时间 -->
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listName"
+        android:layout_marginRight="4dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="@color/text_white"
+        android:textSize="10dip"
+        android:textStyle="italic" />
+
+    <!-- 进入播放 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
